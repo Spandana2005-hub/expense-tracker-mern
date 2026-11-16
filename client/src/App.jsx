@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 
-const API = 'http://localhost:5000/api/expenses';
+const API = (import.meta.env.VITE_API_URL || 'http://localhost:5000') + '/api/expenses';
 const CATEGORIES = ['Food', 'Travel', 'Bills', 'Shopping', 'Health', 'Other'];
 const today = () => new Date().toLocaleDateString('en-CA'); // YYYY-MM-DD
 const emptyForm = () => ({ title: '', amount: '', category: 'Food', date: today() });
