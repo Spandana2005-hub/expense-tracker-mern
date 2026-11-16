@@ -1,0 +1,43 @@
+.app { max-width: 640px; margin: 0 auto; padding: 32px 16px; }
+header h1 { margin: 0; font-size: 28px; }
+header p { margin: 4px 0 24px; color: #6b7280; }
+
+.total-card {
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  color: white; border-radius: 16px; padding: 20px 24px; margin-bottom: 20px;
+  display: flex; flex-direction: column; gap: 4px;
+}
+.total-card strong { font-size: 32px; }
+.total-card small { opacity: 0.85; }
+
+.card {
+  background: white; border-radius: 16px; padding: 20px 24px; margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.card h2 { margin: 0 0 14px; font-size: 18px; }
+
+form.card { display: grid; gap: 10px; }
+input, select {
+  padding: 10px 12px; border: 1px solid #d1d5db; border-radius: 10px; font-size: 15px;
+}
+.actions { display: flex; gap: 8px; }
+button {
+  padding: 10px 18px; border: none; border-radius: 10px; font-size: 15px;
+  background: #4f46e5; color: white; cursor: pointer;
+}
+button.secondary { background: #e5e7eb; color: #1f2937; }
+button.link { background: none; color: #4f46e5; padding: 4px 6px; }
+button.danger { color: #dc2626; }
+
+.error { background: #fee2e2; color: #b91c1c; padding: 10px 14px; border-radius: 10px; }
+.empty { color: #6b7280; }
+
+ul { list-style: none; padding: 0; margin: 0; }
+li {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 12px 0; border-bottom: 1px solid #f0f0f0;
+}
+li:last-child { border-bottom: none; }
+li .meta { display: block; font-size: 13px; color: #6b7280; margin-top: 2px; }
+.right { display: flex; align-items: center; gap: 4px; }
+.amount { font-weight: 600; margin-right: 8px; }
